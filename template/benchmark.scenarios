@@ -1,0 +1,17 @@
+default-scenarios = [
+#    "no_change",
+    "abi_change",
+]
+
+no_change {
+    tasks = ["help"]
+    clear-build-cache-before = SCENARIO
+}
+
+abi_change {
+    tasks = ["help"]
+
+    clear-build-cache-before = SCENARIO
+    apply-abi-change-to = "buildSrc/src/main/kotlin/MyThing.kt"
+#    apply-non-abi-change-to = ["src/main/kotlin/MyThing.kt", "src/main/kotlin/MyOtherThing.kt"]
+}
