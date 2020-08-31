@@ -8,7 +8,7 @@
 
 `./gradlew createBuild` generates a medium size Gradle build (120 modules, 121 gradle.kts scripts) under `build/profile`.
 
-Gradle profiler runs the build a few times, changing the ABI of a Kotlin class under `buildSrc` before each run to ensures all Kotlin scripts need to be recompiled. At the end it should generate a flamegraph under [./build/flamegraph](./build/flamegraph).
+Gradle profiler runs the build a few times, changing the ABI of a Kotlin class under `buildSrc` before each run to ensure all Kotlin scripts need to be recompiled. At the end it should generate a flamegraph under [./build/flamegraph](./build/flamegraph).
 
 #### Improving the way Gradle interfaces with the Kotlin script compiler 
 
